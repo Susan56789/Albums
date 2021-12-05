@@ -1,0 +1,10 @@
+<div class='container'>
+    <header>Albums Collection</header>
+    
+        <table>
+                <tr  *ngFor= 'let album of albums | async'>
+                    <td><a routerLink='photos/{{album.id}}' class="btn btn-primary">{{album.title}}</a></td>
+                </tr>
+            </table>
+        
+    </div>

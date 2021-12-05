@@ -1,0 +1,6 @@
+
+    <h3>Album {{albumId}}</h3>
+    <ul *ngFor='let photo of photos | async' class="row">
+        <li ><img src={{photo.url}} class="ml-3" alt="..."/></li>
+    </ul>
+
